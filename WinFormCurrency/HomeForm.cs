@@ -46,15 +46,17 @@ namespace WinFormCurrency
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.pnlContainer.Controls.ContainsKey("CurrencyTable"))
-            {
+            Form1.Instance.pnlContainer.Controls.RemoveByKey("CurrencyTable");
+
+           // if (!Form1.Instance.pnlContainer.Controls.ContainsKey("CurrencyTable"))
+          //  {
                 CurrencyServices currencyServices = new CurrencyServices();
                 List<Currency> _currencies = currencyServices.GetAllCurrencies();
                 CurrencyTable ct = new CurrencyTable(_currencies);
                 ct.Dock = DockStyle.Fill;
                 Form1.Instance.pnlContainer.Controls.Add(ct);
                 
-            }
+           // }
 
             Form1.Instance.pnlContainer.Controls["CurrencyTable"].BringToFront();
 
@@ -62,19 +64,19 @@ namespace WinFormCurrency
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
-        {            
-            
-            if (!Form1.Instance.pnlContainer.Controls.ContainsKey("CurrencyTable"))
-            {
-                CurrencyServices currencyServices = new CurrencyServices();
+        {
+            Form1.Instance.pnlContainer.Controls.RemoveByKey("CurrencyTable");
+            // if (!Form1.Instance.pnlContainer.Controls.ContainsKey("CurrencyTable"))
+            //    {
+            CurrencyServices currencyServices = new CurrencyServices();
                 string date = currencyServices.DateFormatting(DateTimePicker.Value);
                 List<Currency> _currencies = currencyServices.GetAllCurrencies(date);
                 CurrencyTable ct = new CurrencyTable(_currencies);
                 ct.Dock = DockStyle.Fill;
                 Form1.Instance.pnlContainer.Controls.Add(ct);
 
-            }
-
+          //  }
+            
             Form1.Instance.pnlContainer.Controls["CurrencyTable"].BringToFront();
         }
 

@@ -31,22 +31,23 @@
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrencyTable));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CurrencyLabel = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CurrencyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CurrencyCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CurrencyMid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CurrencyDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.currencies_list = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             guna2GroupBox1.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,8 +112,7 @@
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel2.Controls.Add(this.guna2Panel2);
-            this.guna2ShadowPanel2.Controls.Add(this.guna2Panel1);
+            this.guna2ShadowPanel2.Controls.Add(this.dataGridView1);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(55, 58);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
@@ -121,70 +121,59 @@
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(714, 467);
             this.guna2ShadowPanel2.TabIndex = 3;
             // 
-            // guna2Panel2
+            // dataGridView1
             // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.AutoScrollMargin = new System.Drawing.Size(1, 1);
-            this.guna2Panel2.Location = new System.Drawing.Point(5, 53);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(704, 409);
-            this.guna2Panel2.TabIndex = 1;
-            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CurrencyName,
+            this.CurrencyCode,
+            this.CurrencyMid,
+            this.CurrencyDate});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(5, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(704, 459);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // guna2Panel1
+            // CurrencyName
             // 
-            this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.CurrencyLabel);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(5, 3);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(704, 50);
-            this.guna2Panel1.TabIndex = 0;
+            this.CurrencyName.HeaderText = "Nazwa Waluty";
+            this.CurrencyName.Name = "CurrencyName";
             // 
-            // label4
+            // CurrencyCode
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(610, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Data";
+            this.CurrencyCode.HeaderText = "Kod Waluty";
+            this.CurrencyCode.Name = "CurrencyCode";
             // 
-            // label3
+            // CurrencyMid
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(396, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Średni kurs";
+            this.CurrencyMid.HeaderText = "Kurs Średni";
+            this.CurrencyMid.Name = "CurrencyMid";
             // 
-            // label2
+            // CurrencyDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(181, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kod Waluty";
-            // 
-            // CurrencyLabel
-            // 
-            this.CurrencyLabel.AutoSize = true;
-            this.CurrencyLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrencyLabel.Location = new System.Drawing.Point(19, 14);
-            this.CurrencyLabel.Name = "CurrencyLabel";
-            this.CurrencyLabel.Size = new System.Drawing.Size(72, 25);
-            this.CurrencyLabel.TabIndex = 0;
-            this.CurrencyLabel.Text = "Waluta";
+            this.CurrencyDate.HeaderText = "Data";
+            this.CurrencyDate.Name = "CurrencyDate";
             // 
             // guna2ShadowPanel1
             // 
@@ -217,10 +206,10 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Name = "CurrencyTable";
             this.Size = new System.Drawing.Size(880, 538);
+            this.Load += new System.EventHandler(this.CurrencyTable_Load);
             guna2GroupBox1.ResumeLayout(false);
             this.guna2ShadowPanel2.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -229,16 +218,15 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label CurrencyLabel;
         private Guna.UI2.WinForms.Guna2Panel currencies_list;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrencyName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrencyCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrencyMid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrencyDate;
     }
 }

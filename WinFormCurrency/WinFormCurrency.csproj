@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CurrencyList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CurrencyList.Designer.cs">
-      <DependentUpon>CurrencyList.cs</DependentUpon>
-    </Compile>
     <Compile Include="CurrencyTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,9 +75,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CurrencyServices.cs" />
-    <EmbeddedResource Include="CurrencyList.resx">
-      <DependentUpon>CurrencyList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CurrencyTable.resx">
       <DependentUpon>CurrencyTable.cs</DependentUpon>
     </EmbeddedResource>

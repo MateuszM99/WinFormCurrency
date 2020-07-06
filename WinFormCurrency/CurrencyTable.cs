@@ -25,22 +25,28 @@ namespace WinFormCurrency
             _currencies = currencies;
             InitializeComponent();
         }
-            
-       
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        
+
+
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
 
-            foreach(var i in _currencies)
+        }
+
+        private void CurrencyTable_Load(object sender, EventArgs e)
+        {
+            foreach (var i in _currencies)
             {
-                CurrencyList cl = new CurrencyList();
-                cl.Dock = DockStyle.Top;
-                cl.list_CurrencyN = i.CurrencyName;
-                cl.list_CurrencyC = i.CurrencyCode;
-                cl.list_CurrencyM = i.AverageExchangeRate;
-                cl.list_CurrencyD = i.Date;
-                guna2Panel2.Controls.Add(cl);
+                dataGridView1.Rows.Add(
+                new object[]
+                {
+                i.CurrencyName,
+                i.CurrencyCode,
+                i.AverageExchangeRate,
+                i.Date
+                });
             }
         }
     }

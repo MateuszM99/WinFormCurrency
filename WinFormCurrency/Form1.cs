@@ -74,5 +74,10 @@ namespace WinFormCurrency
             
             Form1.Instance.pnlContainer.Controls["HomeForm"].BringToFront();
         }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
