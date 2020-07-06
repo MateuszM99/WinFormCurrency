@@ -49,5 +49,30 @@ namespace WinFormCurrency
                 });
             }
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {          
+         
+            var result =  from curr in _currencies
+                where curr.CurrencyName.Contains(searchTextBox.Text) || curr.CurrencyCode.Contains(searchTextBox.Text)
+                select curr;
+
+            dataGridView1.Rows.Clear();
+
+
+            foreach (var i in result)
+            {
+                dataGridView1.Rows.Add(
+                new object[]
+                {
+                i.CurrencyName,
+                i.CurrencyCode,
+                i.AverageExchangeRate,
+                i.Date
+                });
+            }
+
+
+        }
     }
 }

@@ -68,9 +68,8 @@ namespace WinFormCurrency
             Form1.Instance.pnlContainer.Controls.RemoveByKey("CurrencyTable");
             // if (!Form1.Instance.pnlContainer.Controls.ContainsKey("CurrencyTable"))
             //    {
-            CurrencyServices currencyServices = new CurrencyServices();
-                string date = currencyServices.DateFormatting(DateTimePicker.Value);
-                List<Currency> _currencies = currencyServices.GetAllCurrencies(date);
+                CurrencyServices currencyServices = new CurrencyServices();               
+                List<Currency> _currencies = currencyServices.GetAllCurrencies(DateTimePicker.Value);
                 CurrencyTable ct = new CurrencyTable(_currencies);
                 ct.Dock = DockStyle.Fill;
                 Form1.Instance.pnlContainer.Controls.Add(ct);
