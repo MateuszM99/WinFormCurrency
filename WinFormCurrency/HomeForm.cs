@@ -86,8 +86,13 @@ namespace WinFormCurrency
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            CurrentDate.Text = DateTime.Now.ToString();
+            CurrentDate.Text = DateTime.Now.ToShortDateString();
             timer1.Start();
+        }
+
+        private void guna2ImageButton5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/mateusz-m%C5%82odochowski-b9abb11aa/");
         }
     }
 }

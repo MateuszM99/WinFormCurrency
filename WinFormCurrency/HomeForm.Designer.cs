@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -43,8 +42,8 @@
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.CurrentDate = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -64,33 +63,18 @@
             // 
             this.guna2ImageButton5.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
             this.guna2ImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.Image")));
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(73, 484);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(3, 481);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
-            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(48, 48);
             this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
             this.guna2ImageButton5.Size = new System.Drawing.Size(64, 54);
             this.guna2ImageButton5.TabIndex = 25;
-            // 
-            // guna2ImageButton4
-            // 
-            this.guna2ImageButton4.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.Image")));
-            this.guna2ImageButton4.ImageRotate = 0F;
-            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(3, 484);
-            this.guna2ImageButton4.Name = "guna2ImageButton4";
-            this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton4.TabIndex = 24;
+            this.guna2ImageButton5.Click += new System.EventHandler(this.guna2ImageButton5_Click);
             // 
             // DateTimePicker
             // 
@@ -150,7 +134,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 13);
+            this.label1.Location = new System.Drawing.Point(68, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 19;
@@ -171,6 +155,7 @@
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.AutoSize = true;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2ShadowPanel1.Controls.Add(this.label2);
@@ -180,7 +165,7 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(880, 74);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(880, 72);
             this.guna2ShadowPanel1.TabIndex = 27;
             // 
             // label2
@@ -218,11 +203,24 @@
             this.guna2ShadowPanel2.Controls.Add(this.label1);
             this.guna2ShadowPanel2.Controls.Add(this.guna2Button1);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(73, 126);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(46, 126);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(266, 302);
             this.guna2ShadowPanel2.TabIndex = 30;
+            // 
+            // CurrentDate
+            // 
+            this.CurrentDate.AutoSize = true;
+            this.CurrentDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CurrentDate.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentDate.Location = new System.Drawing.Point(57, 87);
+            this.CurrentDate.Name = "CurrentDate";
+            this.CurrentDate.Size = new System.Drawing.Size(69, 30);
+            this.CurrentDate.TabIndex = 21;
+            this.CurrentDate.Text = "label4";
+            this.CurrentDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CurrentDate.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2ShadowPanel3
             // 
@@ -232,24 +230,11 @@
             this.guna2ShadowPanel3.Controls.Add(this.DateTimePicker);
             this.guna2ShadowPanel3.Controls.Add(this.guna2Button2);
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(540, 126);
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(516, 126);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(266, 302);
             this.guna2ShadowPanel3.TabIndex = 31;
-            // 
-            // CurrentDate
-            // 
-            this.CurrentDate.AutoSize = true;
-            this.CurrentDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CurrentDate.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentDate.Location = new System.Drawing.Point(22, 87);
-            this.CurrentDate.Name = "CurrentDate";
-            this.CurrentDate.Size = new System.Drawing.Size(69, 30);
-            this.CurrentDate.TabIndex = 21;
-            this.CurrentDate.Text = "label4";
-            this.CurrentDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CurrentDate.Click += new System.EventHandler(this.label4_Click);
             // 
             // timer1
             // 
@@ -265,7 +250,6 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2Separator3);
             this.Controls.Add(this.guna2ImageButton5);
-            this.Controls.Add(this.guna2ImageButton4);
             this.Name = "HomeForm";
             this.Size = new System.Drawing.Size(880, 538);
             this.Load += new System.EventHandler(this.HomeForm_Load);
@@ -277,6 +261,7 @@
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -284,7 +269,6 @@
 
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;

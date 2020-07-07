@@ -32,9 +32,7 @@ namespace WinFormCurrency
             get { return panelContainer; }
             set { panelContainer = value; }
         }
-
-        
-
+      
         public Form1()
         {
             InitializeComponent();
@@ -79,5 +77,12 @@ namespace WinFormCurrency
         {
 
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        
     }
 }
