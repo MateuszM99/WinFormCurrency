@@ -146,7 +146,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(275, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(308, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.TabIndex = 17;
@@ -165,14 +165,14 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(880, 72);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(880, 71);
             this.guna2ShadowPanel1.TabIndex = 27;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(355, 18);
+            this.label2.Location = new System.Drawing.Point(378, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 30);
             this.label2.TabIndex = 0;
@@ -180,7 +180,7 @@
             // 
             // guna2VSeparator1
             // 
-            this.guna2VSeparator1.Location = new System.Drawing.Point(407, 80);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(433, 78);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(10, 382);
             this.guna2VSeparator1.TabIndex = 28;
@@ -203,7 +203,7 @@
             this.guna2ShadowPanel2.Controls.Add(this.label1);
             this.guna2ShadowPanel2.Controls.Add(this.guna2Button1);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(46, 126);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(85, 126);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(266, 302);
@@ -230,7 +230,7 @@
             this.guna2ShadowPanel3.Controls.Add(this.DateTimePicker);
             this.guna2ShadowPanel3.Controls.Add(this.guna2Button2);
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(516, 126);
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(531, 126);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(266, 302);

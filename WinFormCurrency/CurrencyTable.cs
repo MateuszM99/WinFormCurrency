@@ -54,7 +54,7 @@ namespace WinFormCurrency
         {          
          
             var result =  from curr in _currencies
-                where curr.CurrencyName.Contains(searchTextBox.Text) || curr.CurrencyCode.Contains(searchTextBox.Text)
+                where curr.CurrencyName.ToLower().Contains(searchTextBox.Text.ToLower()) || curr.CurrencyCode.ToLower().Contains(searchTextBox.Text.ToLower())
                 select curr;
 
             dataGridView1.Rows.Clear();
