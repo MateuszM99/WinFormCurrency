@@ -2,7 +2,7 @@
 
 Simple app to check the currency exchange rate at a given date.
 
-##Technologies
+## Technologies
 
 -Winforms
 -C#
