@@ -3,6 +3,6 @@
 Simple app to check the currency exchange rate at a given date.
 
 ## Technologies
-
--Winforms
--C#
+Project is created with :
+*Winforms
+*C#
