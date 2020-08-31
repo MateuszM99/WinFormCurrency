@@ -15,6 +15,8 @@ namespace WinFormCurrency.Services
 {
     public class CurrencyServices : ICurrencyServices
     {
+        private static HttpClient client = new HttpClient();
+
         private HashSet<string> neededCurrencies = new HashSet<string>
         {
             "ALL","AMD","AZN","BAM","BGN","BYN","BZD","CHF","CNY","CZK","DKK",
@@ -26,7 +28,6 @@ namespace WinFormCurrency.Services
         {
             List<Currency> currencies = new List<Currency>();
 
-            var client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/xml"));
 
             var xml1 = client.GetStringAsync("http://api.nbp.pl/api/exchangerates/tables/A/").GetAwaiter().GetResult();
@@ -44,8 +45,7 @@ namespace WinFormCurrency.Services
         public List<Currency> GetAllCurrencies(DateTime cDate)
         {
             List<Currency> currencies = new List<Currency>();
-
-            var client = new HttpClient();
+          
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/xml"));
             string stringDate = DateFormatting(cDate);
             string url1 = String.Format("http://api.nbp.pl/api/exchangerates/tables/A/{0}", stringDate);
